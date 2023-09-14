@@ -18,17 +18,17 @@ export const defaultFilters: Array<Filter> = [
     name: 'Hackathon Track',
     options: [
       {
-        id: 'DePIN',
+        id: 'Physical Infrastructure Networks',
         isSelected: false,
         count: 0,
       },
       {
-        id: 'DeFi & Payments',
+        id: 'Finance and Payments',
         isSelected: false,
         count: 0,
       },
       {
-        id: 'Gaming',
+        id: 'Gaming & Entertainment',
         isSelected: false,
         count: 0,
       },
@@ -38,7 +38,7 @@ export const defaultFilters: Array<Filter> = [
         count: 0,
       },
       {
-        id: 'Infrastructure Business',
+        id: 'Crypto Infrastructure',
         isSelected: false,
         count: 0,
       },

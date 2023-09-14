@@ -3,7 +3,7 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-      sans: ['Lato', 'sans-serif'],
+      'bebas-neue': ['Bebas Neue', 'sans-serif'],
     },
     fontSize: {
       xs: '0.75rem',

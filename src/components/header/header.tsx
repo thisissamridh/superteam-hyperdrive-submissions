@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const Header = () => {
@@ -10,22 +11,28 @@ const Header = () => {
           <div className="h-64 bg-gradient-to-t from-[#5522e0_-126.34%] md:h-128 lg:to-[rgba(0,0,0,0)_82.81%]">
             <img
               className="h-64 w-full md:h-full"
-              src={`${router.basePath}/assets/images/site-image.png`}
+              src={`${router.basePath}/assets/images/new-site-image.png`}
               alt="Superteam"
             />
-            <div className="flex items-center justify-center">
-              <p className="absolute bottom-0 left-1/2 z-10 m-0 -translate-x-1/2 -translate-y-1/2 text-center text-lg text-zinc-100 md:text-3xl">
-                Explore a curated list of <br />
-                <span className="font-bold text-[#14F195]">
-                  Hyperdrive
-                </span>{' '}
-                hackathon submissions
-                <br />
-                made by{' '}
-                <span className="font-bold text-superteam-secondary">
+            <img
+              className="absolute top-4 right-4 h-[5vw] max-h-[100px] min-h-[50px] w-[5vw] min-w-[50px] max-w-[100px]"
+              src={`${router.basePath}/assets/logo/logo-yellow.png`}
+              alt="Logo"
+            />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <p className="text-center font-bebas-neue text-lg text-zinc-100 md:text-3xl">
+                Explore{' '}
+                <span className="font-bold  text-[#11F195]">Hyperdrive</span>{' '}
+                hackathon submissions made by{' '}
+                <Link
+                  href="https://superteam.fun/"
+                  className="font-bold  text-superteam-secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Superteam
-                </span>{' '}
-                Members
+                </Link>{' '}
+                members
               </p>
             </div>
           </div>
