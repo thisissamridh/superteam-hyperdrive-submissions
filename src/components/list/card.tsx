@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import type { Key } from 'react';
 
 import type { Response } from '@/utils/responses';
+import { getTrackBackgroundColor, getTrackTextColor } from '@/utils/trackUtils';
 
 type CardProps = {
   response: Response;
@@ -246,8 +247,12 @@ const Card = ({ response }: CardProps) => {
               {tracks.map(
                 (track: string | null, index: Key | null | undefined) => (
                   <span
-                    className="mr-2 rounded-full bg-zinc-700 px-1.5 py-0.5 text-xs font-medium text-zinc-300"
+                    className="mr-2 rounded-full px-1.5 py-0.5 text-xs font-medium text-zinc-300"
                     key={index}
+                    style={{
+                      backgroundColor: getTrackBackgroundColor(track || ''),
+                      color: getTrackTextColor(track || ''),
+                    }} // Apply the background color here
                   >
                     {track}
                   </span>
