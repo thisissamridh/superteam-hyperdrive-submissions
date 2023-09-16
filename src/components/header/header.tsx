@@ -10,7 +10,7 @@ const Header = () => {
         <div className="relative w-full">
           <div className="h-64 bg-gradient-to-t from-[#5522e0_-126.34%] md:h-128 lg:to-[rgba(0,0,0,0)_82.81%]">
             <img
-              className="h-64 w-full md:h-full"
+              className="absolute top-0 left-0 h-full w-full object-cover"
               src={`${router.basePath}/assets/images/new-site-image.png`}
               alt="Superteam"
             />

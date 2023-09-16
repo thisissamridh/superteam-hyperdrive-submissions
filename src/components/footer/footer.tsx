@@ -56,11 +56,11 @@ const Footer = () => {
           <footer className="bg-zinc-900">
             <div className="mx-auto max-w-7xl overflow-hidden px-6 pt-12 pb-6 lg:px-8">
               <nav
-                className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+                className="flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-x-12 sm:space-y-0"
                 aria-label="Footer"
               >
                 {navigation.main.map((item) => (
-                  <div key={item.name} className="pb-6">
+                  <div key={item.name}>
                     <a
                       href={item.href}
                       target="_blank"
